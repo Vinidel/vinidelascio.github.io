@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <div class="post-meta-top">
+      <a href="{{ '/' | relative_url }}" class="back-link">&larr; back</a>
+      <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%B %-d, %Y" }}
+      </time>
+      {% assign words = content | number_of_words %}
+      {% if words > 0 %}
+      <span class="reading-time">{{ words | divided_by: 200 | plus: 1 }} min read</span>
+      {% endif %}
+    </div>
+    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    {% if page.description %}
+    <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+</article>

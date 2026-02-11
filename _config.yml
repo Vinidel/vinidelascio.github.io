@@ -1,6 +1,6 @@
 # Site settings
 title: Vinicius Delascio
-email: vinicius.delascio@gmail.com
+email: vini.delascio@gmail.com
 description: >-
   Software engineer writing about AI-assisted development,
   engineering workflows, and building better systems.
@@ -23,11 +23,6 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-# Minima theme settings
-minima:
-  skin: classic
-  date_format: "%B %-d, %Y"
 
 # Markdown rendering
 markdown: kramdown

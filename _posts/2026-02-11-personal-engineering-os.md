@@ -9,15 +9,11 @@ categories: engineering ai
 Over the past few weeks, I've been experimenting with AI-assisted development on one of my side projects.
 
 At first, it felt fast.
-
 Then it felt chaotic.
-
 Then I realized the problem wasn't the AI.
-
 It was the lack of structure.
 
 So I built a stage-gated workflow — what I now call my Personal Engineering Operating System.
-
 This changed everything.
 
 ## The Problem With Raw AI Speed
