@@ -4,7 +4,7 @@ email: vini.delascio@gmail.com
 description: >-
   Software engineer writing about AI-assisted development,
   engineering workflows, and building better systems.
-baseurl: "" # set to "/repo-name" if hosted at username.github.io/repo-name
+baseurl: "/vinidelascio.github.io"
 url: "https://vinidel.github.io"
 
 # Author (Minima 2.5 expects a plain string)
