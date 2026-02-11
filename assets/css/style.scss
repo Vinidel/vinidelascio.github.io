@@ -1,0 +1,298 @@
+---
+---
+
+// Override minima variables before import
+$base-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+$base-font-size:   17px;
+$base-line-height: 1.7;
+$content-width:    720px;
+$on-large:         780px;
+
+$text-color:       #1a1a2e;
+$background-color: #ffffff;
+$brand-color:      #2563eb;
+$grey-color:       #6b7280;
+$grey-color-light: #e5e7eb;
+$grey-color-dark:  #374151;
+
+$code-font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+
+@import "minima";
+
+// ─── Base ────────────────────────────────────────────────────────────
+
+body {
+  font-feature-settings: 'kern' 1, 'liga' 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// ─── Typography ──────────────────────────────────────────────────────
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.6rem;
+  line-height: 1.3;
+  margin-top: 2.5em;
+  margin-bottom: 0.6em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid $grey-color-light;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-top: 2em;
+}
+
+p {
+  margin-bottom: 1.4em;
+}
+
+strong {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+blockquote {
+  border-left: 3px solid $brand-color;
+  color: $grey-color-dark;
+  font-style: normal;
+  background: #f8fafc;
+  padding: 1em 1.5em;
+  border-radius: 0 6px 6px 0;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+// ─── Links ───────────────────────────────────────────────────────────
+
+a {
+  text-decoration: none;
+  transition: color 0.15s ease;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+// ─── Code ────────────────────────────────────────────────────────────
+
+code {
+  font-family: $code-font-family;
+  font-size: 0.875em;
+  background: #f1f5f9;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+}
+
+pre {
+  background: #0f172a;
+  border: none;
+  border-radius: 8px;
+  padding: 1.25em 1.5em;
+  overflow-x: auto;
+
+  code {
+    color: #e2e8f0;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 0.85em;
+    line-height: 1.6;
+  }
+}
+
+// ─── Lists ───────────────────────────────────────────────────────────
+
+ul, ol {
+  margin-bottom: 1.4em;
+
+  li {
+    margin-bottom: 0.35em;
+  }
+}
+
+// ─── Header ──────────────────────────────────────────────────────────
+
+.site-header {
+  border-top: 3px solid $brand-color;
+  border-bottom: 1px solid $grey-color-light;
+  background: #ffffff;
+}
+
+.site-title {
+  font-weight: 700 !important;
+  letter-spacing: -0.02em;
+  font-size: 1.3rem !important;
+
+  &,
+  &:visited {
+    color: #0f172a !important;
+  }
+}
+
+.site-nav .page-link {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: $grey-color-dark;
+
+  &:hover {
+    color: $brand-color;
+    text-decoration: none;
+  }
+}
+
+// ─── Footer ──────────────────────────────────────────────────────────
+
+.site-footer {
+  border-top: 1px solid $grey-color-light;
+  padding-top: 2em;
+  color: $grey-color;
+  font-size: 0.9rem;
+}
+
+// ─── Home / Post List ────────────────────────────────────────────────
+
+.home {
+  .hero {
+    padding: 3em 0 2em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid $grey-color-light;
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.3em;
+      color: #0f172a;
+    }
+
+    .tagline {
+      font-size: 1.15rem;
+      color: $grey-color;
+      line-height: 1.6;
+      max-width: 540px;
+    }
+  }
+}
+
+.post-list-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $grey-color;
+  border-bottom: none;
+  margin-bottom: 1em;
+  padding-bottom: 0;
+}
+
+.post-list {
+  list-style: none;
+  margin-left: 0;
+
+  li {
+    padding: 1.25em 0;
+    border-bottom: 1px solid $grey-color-light;
+    margin-bottom: 0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .post-meta {
+    font-size: 0.85rem;
+    color: $grey-color;
+    margin-bottom: 0.25em;
+    font-weight: 500;
+  }
+
+  .post-link {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.35;
+
+    &:hover {
+      color: $brand-color;
+      text-decoration: none;
+    }
+  }
+}
+
+// ─── Post / Page Content ─────────────────────────────────────────────
+
+.post-header {
+  margin-bottom: 2em;
+}
+
+.post-title,
+.page-heading {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.post-meta {
+  color: $grey-color;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.post-content {
+  h2 {
+    margin-top: 2.5em;
+  }
+
+  img {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin: 2em 0;
+  }
+}
+
+// ─── HR ──────────────────────────────────────────────────────────────
+
+hr {
+  border: none;
+  border-top: 1px solid $grey-color-light;
+  margin: 3em 0;
+}
+
+// ─── 404 ─────────────────────────────────────────────────────────────
+
+.error-page {
+  text-align: center;
+  padding: 5em 0;
+
+  h1 {
+    font-size: 6rem;
+    color: $grey-color-light;
+    margin-bottom: 0.1em;
+    line-height: 1;
+  }
+
+  p {
+    color: $grey-color;
+    font-size: 1.1rem;
+  }
+
+  a {
+    font-weight: 600;
+  }
+}

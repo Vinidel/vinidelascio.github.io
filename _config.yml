@@ -1,0 +1,46 @@
+# Site settings
+title: Vinicius Delascio
+email: vinicius.delascio@gmail.com
+description: >-
+  Software engineer writing about AI-assisted development,
+  engineering workflows, and building better systems.
+baseurl: "" # set to "/repo-name" if hosted at username.github.io/repo-name
+url: "https://vinidel.github.io"
+
+# Author (Minima 2.5 expects a plain string)
+author: Vinicius Delascio
+
+# Social
+twitter_username: vini_delascio
+github_username: Vinidel
+
+# Navigation — controls which pages appear in the header, in order
+header_pages:
+  - about.markdown
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Minima theme settings
+minima:
+  skin: classic
+  date_format: "%B %-d, %Y"
+
+# Markdown rendering
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Permalink style
+permalink: /:title/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
