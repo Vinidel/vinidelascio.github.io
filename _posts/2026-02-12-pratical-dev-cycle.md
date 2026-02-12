@@ -261,6 +261,8 @@ Stage 0 is complete when:
 - Major decisions are locked
 - Approach is coherent
 
+{% endhighlight %}
+
 </details>
 
 No production code is written before this file exists.
