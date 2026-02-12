@@ -468,6 +468,54 @@ img {
 }
 
 .post-content {
+  details.expandable-template {
+    margin: 1.5em 0;
+    border: 1px solid $border;
+    border-radius: 8px;
+    overflow: hidden;
+
+    summary {
+      padding: 0.75em 1em;
+      cursor: pointer;
+      font-family: $font-mono;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: $accent;
+      background: $bg-surface;
+      list-style: none;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &:hover {
+        color: lighten($accent, 10%);
+      }
+    }
+
+    .highlight {
+      margin: 0;
+      border-radius: 0;
+      border: none;
+      border-top: 1px solid $border;
+    }
+  }
+
+  .diagram-figure {
+    margin: 2em 0;
+    text-align: center;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 480px;
+      object-fit: contain;
+    }
+  }
+
   h2 {
     padding-bottom: 0.4em;
     border-bottom: 1px solid $border;
